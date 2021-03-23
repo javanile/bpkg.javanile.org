@@ -26,7 +26,7 @@ val:
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Theme
 #
-#remote_theme: javanile/package-manager@main
+remote_theme: javanile/package-manager@main
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Site Build options
