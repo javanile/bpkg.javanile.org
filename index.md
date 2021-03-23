@@ -1,5 +1,4 @@
 ---
-layout:   page
 title:    Home
 tabtitle: bpkg home
 tagline:  Supporting tagline
