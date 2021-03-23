@@ -27,6 +27,7 @@ val:
 # Theme
 #
 remote_theme: javanile/package-manager@main
+logo: /assets/images/logo.png
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Site Build options
