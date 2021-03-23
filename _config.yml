@@ -29,6 +29,7 @@ val:
 remote_theme: javanile/package-manager@main
 logo: /assets/images/logo.png
 logo_text: bpkg
+primary_color: "#2d2d2d"
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Site Build options
