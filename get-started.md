@@ -1,10 +1,8 @@
 ---
-layout:   page
 title:    Home
 tabtitle: bpkg home
 tagline:  Supporting tagline
 ---
-{% include JB/setup %}
 
 ## bpkg is a _bash package manager_
 
