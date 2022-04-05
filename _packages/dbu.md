@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "dbu"
 description: "Bash script that manages Dropbox files"
 category: default

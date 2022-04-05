@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "lcov.sh"
 description: "LCOV based utility to generate code coverage from BASH project"
 category: bash

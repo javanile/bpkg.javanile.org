@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "json.sh"
 description: "A pipeable JSON parser written in Bash"
 category: default

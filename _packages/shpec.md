@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "shpec"
 description: "Test your shell scripts"
 category: bash

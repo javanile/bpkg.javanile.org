@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "hr"
 description: "A horizontal ruler for your terminal"
 category: bash

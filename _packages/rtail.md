@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "rtail"
 description: "Easily tail a file over SSH"
 category: default

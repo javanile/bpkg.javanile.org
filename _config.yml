@@ -11,6 +11,17 @@ title   : BPKG
 tagline : lightweight bash package manager
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Packages settings
+#
+# Themes are encouraged to use these universal variables
+# so be sure to set them if your theme uses them.
+#
+collections:
+  packages:
+    output: true
+    permalink: /:collection/:name
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Custom values
 #
 # You can access those on every page with the `custom` namespace

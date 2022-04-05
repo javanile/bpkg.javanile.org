@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "is.sh"
 description: "Fancy alternative for old good test command"
 category: bash

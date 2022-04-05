@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "clip"
 description: "Silly terminal clipboard"
 category: default

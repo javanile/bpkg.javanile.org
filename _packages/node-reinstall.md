@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "node-reinstall"
 description: "Complete Node Reinstall. This deletes everything, yes everything, and re-installs Node and NPM with NVM, then re-installs global NPM modules."
 category: nodejs

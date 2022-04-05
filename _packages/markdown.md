@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "markdown"
 description: "Markdown interpreter using only traditional Unix tools"
 category: default

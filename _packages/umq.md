@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "umq"
 description: "TCP message pushing and receiving in Bash"
 category: default

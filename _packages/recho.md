@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "recho"
 description: "Easily echo strings over SSH"
 category: default

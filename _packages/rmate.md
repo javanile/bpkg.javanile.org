@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "rmate"
 description: "Remote TextMate 2 implemented as shell script"
 category: utility

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "osx-screencast"
 description: "Easily create a screencast on OS X in a few commands"
 category: default

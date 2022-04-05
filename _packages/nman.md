@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "nman"
 description: "Read the node.js core api in man page format"
 category: default

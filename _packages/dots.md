@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "dots"
 description: "Bootstrapping library for OS/X & Ubuntu (and maybe others!)"
 category: default

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bashsh"
 description: "Improves your Bash scripts"
 category: bash

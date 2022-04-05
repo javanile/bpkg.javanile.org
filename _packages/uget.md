@@ -1,6 +1,5 @@
 ---
 title: uget
-layout: post
 title: "uget"
 description: "Checks the current utility to download and use it"
 category: default

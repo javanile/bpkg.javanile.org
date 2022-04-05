@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "term"
 description: "Terminal fun written in bash inspired by clibs/term"
 category: default

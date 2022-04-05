@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "clock"
 description: "Track your working hours on the command line"
 category: bash

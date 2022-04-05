@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "wipe modules"
 description: "A little agent that removes the node_modules folder of non-active projects"
 category: bash

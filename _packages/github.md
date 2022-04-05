@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "github"
 description: "Github API from the command line"
 category: default

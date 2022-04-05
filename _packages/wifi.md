@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "wifi"
 description: "Bash script that connects to wifi"
 category: default

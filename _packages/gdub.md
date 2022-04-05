@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "gdub"
 description: "A gradlew / gradle wrapper to make life easier."
 category: default

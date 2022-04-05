@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash-backup"
 description: "Simple backup shell script by bash v4.*"
 category: utility

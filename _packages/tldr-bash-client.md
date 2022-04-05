@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "tldr bash client"
 description: "Display tldr pages: community driven man-by-example"
 category: default
