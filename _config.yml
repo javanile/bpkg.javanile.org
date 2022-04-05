@@ -38,7 +38,7 @@ val:
 # Theme
 #
 remote_theme: javanile/package-manager@main
-logo: /assets/images/logo.png
+logo: https://github.com/javanile/bpkg.javanile.org/raw/main/bpkg.png
 logo_text: bpkg
 primary_color: "#2d2d2d"
 
