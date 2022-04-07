@@ -1,71 +1,40 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-# Global site configuration
-
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Authorship settings
 #
-# Themes are encouraged to use these universal variables
-# so be sure to set them if your theme uses them.
+title: BPKG
+tagline: Lightweight Shell Package Manager
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Alert or notifications settings
 #
-title   : BPKG
-tagline : lightweight bash package manager
+alert:
+  type: info
+  title: 🎉 Happy News!
+  message: The new release is out :-) <a href="https://github.com/bpkg/bpkg/releases" target="_blank">Get it NOW!</a>
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Theme settings
+#
+remote_theme: javanile/package-manager@main
+logo: https://github.com/javanile/bpkg.javanile.org/raw/main/bpkg.png
+logo_text: bpkg
+primary_color: "#2d2d2d"
+highlighter: rouge
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Packages settings
 #
-# Themes are encouraged to use these universal variables
-# so be sure to set them if your theme uses them.
-#
+defaults:
+  - scope: { path: "" }
+    values: { layout: "default" }
 collections:
   packages:
     output: true
     permalink: /:collection/:name
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-# Custom values
+# Build settings
 #
-# You can access those on every page with the `custom` namespace
-# like this:
-#
-#     {{ site.val.packages }}
-#
-# It will simply repace it with the text you specify here
-#
-val:
-  organization: https://github.com/bpkg/
-
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-# Theme
-#
-remote_theme: javanile/package-manager@main
-logo: https://github.com/javanile/bpkg.javanile.org/raw/main/bpkg.png
-logo_text: bpkg
-primary_color: "#2d2d2d"
-
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-# Site Build options
-#
-
-# Markdown interpreter (moved away from Maruku)
-markdown : kramdown
-kramdown:
-  # Enabling Github Flavored Markdown
+markdown: kramdown
+kramdown:  
   input: GFM
-
-highlighter : rouge # code highlighter
-
-# This is the default format.
-# For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /pkg/:title
-
-exclude: [".rvmrc", ".rbenv-version", "Rakefile", "changelog.md"]
-
-# The production_url is only used when full-domain names are needed
-# such as sitemap.txt
-# Most places will/should use BASE_PATH to make the urls
-#
-# If you have set a CNAME (pages.github.com) set your custom domain here.
-# Else if you are pushing to username.github.io, replace with your username.
-# Finally if you are pushing to a GitHub project page, include the project name at the end.
-#
-production_url : http://username.github.io
