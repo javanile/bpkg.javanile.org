@@ -12,11 +12,11 @@ With **bpkg** you can easily install and manage Bash packages.
 
 It takes care of installing/uninstalling, execution permissions and everything so you can simply do the following:
 
-{% highlight bash %}
+```shell
 # Installs `term` on `/usr/local/bin` (https://github.com/bpkg/term)
 $ bpkg install term -g
 $ term
-{% endhighlight %}
+```
 
 Besides installing shell scripts globally you can use them on a _per-project basis_.
 

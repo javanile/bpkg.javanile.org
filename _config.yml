@@ -24,6 +24,8 @@ highlighter: rouge
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Packages settings
 #
+suggested_command: "bpkg install {package}"
+
 defaults:
   - scope: { path: "" }
     values: { layout: "default" }
