@@ -2,7 +2,7 @@
 check-env:
 	@command -v docker >/dev/null 2>&1 || { echo "ERROR: docker non trovato. Installa da: https://docs.docker.com/get-docker/"; exit 1; }
 	@docker info >/dev/null 2>&1 || { echo "ERROR: docker non è in esecuzione. Avvia il daemon Docker."; exit 1; }
-	@echo "OK: ambiente pronto (docker $$(docker --version | awk '{print $$3}' | tr -d ','))"
+	@echo "OK: System is ready (docker $$(docker --version | awk '{print $$3}' | tr -d ','))"
 
 serve: check-env
 	@echo 'source "https://rubygems.org"' > Gemfile
