@@ -2,6 +2,7 @@
 title:    Home
 tabtitle: bpkg home
 tagline:  Supporting tagline
+permalink: /get-started/
 ---
 
 ## bpkg is a _bash package manager_
