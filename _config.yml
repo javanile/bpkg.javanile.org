@@ -27,8 +27,12 @@ highlighter: rouge
 defaults:
   - scope: { path: "" }
     values: { layout: "default" }
+
 collections:
   packages:
+    output: true
+    permalink: /:collection/:name
+  categories:
     output: true
     permalink: /:collection/:name
 
