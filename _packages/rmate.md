@@ -1,8 +1,11 @@
 ---
-title: "rmate"
-description: "Remote TextMate 2 implemented as shell script"
-category: utility
-tags: [osx, utility, utils]
+title: rmate
+description: Remote TextMate 2 implemented as shell script
+categories: utilities
+keywords:
+  - osx
+  - utility
+  - utils
 ---
 
 ## Description
@@ -16,11 +19,15 @@ or remote clients.
 It's a good idea to allow access to TM2 only for local clients. In this case it's required
 to open a SSH connection to the remote system and specify a remote tunnel in addition:
 
-    ssh -R 52698:localhost:52698 user@example.com
+```bash
+ssh -R 52698:localhost:52698 user@example.com
+```
 
 After log-in on the remote system a file can be edited by just executing
 
-    rmate test.txt
+```bash
+rmate test.txt
+```
 
 ### Remote clients
 
@@ -28,7 +35,9 @@ On some machines, where port forwarding is not possible, for example due to a mi
 daemon, it's required to set TM2 to allow access for "remote clients". After log-in on the
 remote machine a file can be edited by executing
 
-    rmate -H textmate-host test.txt
+```bash
+rmate -H textmate-host test.txt
+```
 
 ## Requirements
 
@@ -38,11 +47,15 @@ A bash with compiled support for "/dev/tcp" is required.
 
 Edit specified file
 
-    $ ./rmate [arguments] [--] file-path
+```bash
+$ ./rmate [arguments] [--] file-path
+```
 
 Read text from stdin
 
-    $ echo "hello TextMate" | ./rmate [arguments] -
+```bash
+$ echo "hello TextMate" | ./rmate [arguments] -
+```
 
 ### Arguments
 
@@ -59,7 +72,6 @@ Read text from stdin
     -h, --help       Display this usage information.
         --version    Show version and exit.
 
-
 ### Default parameter configuration
 
 Some default parameters (_host_ and _port_) can be configured by defining them
@@ -67,13 +79,17 @@ as the environment variables `RMATE_HOST` and `RMATE_PORT` or by putting them
 in a configuration file. The configuration files loaded are `/etc/rmate.rc`
 and `~/.rmate.rc`, e.g.:
 
-    host: auto  # prefer host from SSH_CONNECTION over localhost
-    port: 52698
+```ini
+host: auto  # prefer host from SSH_CONNECTION over localhost
+port: 52698
+```
 
 Alternative notation for configuration file is:
 
-    host=auto
-    port=52698
+```ini
+host=auto
+port=52698
+```
 
 The precedence for setting the configuration is (higher precedence counts):
 
@@ -85,7 +101,5 @@ The precedence for setting the configuration is (higher precedence counts):
 
 ## Links
 
-* [Source Code (GitHub)][https://github.com/aurora/rmate]
-* [Author: Harald Lapp](https://github.com/aurora)
-
-
+* [Source Code (GitHub)](https://github.com/aurora/rmate)
+* Author: [Harald Lapp](https://github.com/aurora)

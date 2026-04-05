@@ -1,20 +1,21 @@
 ---
-title: "recho"
-description: "Easily echo strings over SSH"
-category: default
-tags: [internet, ssh]
+title: recho
+description: Easily echo strings over SSH
+categories: networking
+keywords:
+  - internet
+  - ssh
 ---
-
 
 This package makes easy to send quick strings across SSH hosts.
 
-{% highlight bash %}
+```bash
 $ bpkg install -g recho
-{% endhighlight %}
+```
 
 ## Usage
 
-{% highlight bash %}
+```bash
 # The following will create a file `/var/log/dump`
 # on `somehost.com` under `user` with the content `beep`
 $ recho user@somehost.com beep > /var/log/dump
@@ -28,11 +29,10 @@ recho [-hvV] [ssh_options] [user@] [echo_options] [string]
 
 [ssh_options]   ssh options
 [echo_options]  echo options
-{% endhighlight %}
+```
 
 ## Links
 
-* [Source Code (GitHub)](https://github.com/bpkg/recho);
-* Author: [Joseph Werle](https://github.com/jwerle);
+* [Source Code (GitHub)](https://github.com/bpkg/recho)
+* Author: [Joseph Werle](https://github.com/jwerle)
 * ["Sister project" *rtail*](http://bpkg.sh/pkg/rtail)
-

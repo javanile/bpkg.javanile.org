@@ -1,22 +1,23 @@
 ---
-title: "json.sh"
-description: "A pipeable JSON parser written in Bash"
-category: default
-tags: [json, parser]
+title: json.sh
+description: A pipeable JSON parser written in Bash
+categories: utilities
+keywords:
+  - json
+  - parser
 ---
-
 
 yo, so it's a json parser written in bash
 
 Pipe json to it, and it traverses the json objects and prints out the path to the current object (as a JSON array) and then the object, without whitespace.
 
-{% highlight bash %}
+```bash
 $ bpkg install -g json.sh
-{% endhighlight %}
+```
 
 ## Usage
 
-{% highlight bash %}
+```bash
 $ json_parse < package.json
 ["name"]  "JSON.sh"
 ["version"]  "0.0.0"
@@ -33,7 +34,7 @@ $ json_parse < package.json
 # Here's a more complex example:
 #... try it and see
 curl registry.npmjs.org/express | ./JSON.sh | egrep '\["versions","[^"]*"\]'
-{% endhighlight %}
+```
 
 ### Options
 
@@ -48,8 +49,6 @@ curl registry.npmjs.org/express | ./JSON.sh | egrep '\["versions","[^"]*"\]'
 
 ## Links
 
-* [Source Code (GitHub)](https://github.com/bpkg/JSON.sh);
-* Author: [Dominic Tarr](https://github.com/dominictarr);
-* Packager: [Joseph Werle](https://github.com/jwerle);
-
-
+* [Source Code (GitHub)](https://github.com/bpkg/JSON.sh)
+* Author: [Dominic Tarr](https://github.com/dominictarr)
+* Packager: [Joseph Werle](https://github.com/jwerle)

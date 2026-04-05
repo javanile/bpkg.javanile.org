@@ -1,21 +1,23 @@
 ---
-title: "github"
-description: "Github API from the command line"
-category: default
-tags: [library, github]
+title: github
+description: Github API from the command line
+categories: utilities
+keywords:
+  - library
+  - github
 ---
 
 This package allows you to perform GitHub actions on your shell scripts.
 
-{% highlight bash %}
+```bash
 $ bpkg install github
-{% endhighlight %}
+```
 
 ## Usage
 
 This is how you'd use it via command-line. Note that to use some commands you need to authenticate first.
 
-{% highlight bash %}
+```bash
 # Authentication
 $ github auth jwerle
 Enter host password for user 'jwerle':
@@ -46,12 +48,11 @@ $ github request GET /feeds
     }
   }
 }
-{% endhighlight %}
+```
 
 To see an example of a shell script and more info, go to the GitHub repository below.
 
 ## Links
 
-* [Source Code (GitHub)](https://github.com/bpkg/github);
-* [Author: Joseph Werle](https://github.com/jwerle);
-
+* [Source Code (GitHub)](https://github.com/bpkg/github)
+* Author: [Joseph Werle](https://github.com/jwerle)

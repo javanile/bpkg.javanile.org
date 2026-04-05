@@ -1,16 +1,18 @@
 ---
-title: "is.sh"
-description: "Fancy alternative for old good test command"
-category: bash
-tags: [utility, condition, bash]
+title: is.sh
+description: Fancy alternative for old good test command
+categories: bash
+keywords:
+  - utility
+  - condition
+  - bash
 ---
 
 **is.sh** allows you to write conditions which can be read by average human being.
 
-
 ## Usage
 
-{% highlight bash %}
+```bash
 var=123
 
 if is equal $var 123.0; then
@@ -20,8 +22,7 @@ fi
 if is not a substring $var "foobar"; then
     echo "and it's easy to read"
 fi
-{% endhighlight %}
-
+```
 
 ### Available conditions
 
@@ -46,20 +47,17 @@ fi
 * ``is true <value>`` - true if value is equal "true" or "0"
 * ``is false <value>`` - oposite of ``is true <value>``
 
-
 ### Negations
 
 You can negate any condition by putting ``not`` in front of it:
 
-{% highlight bash %}
+```bash
 $ is a number "abc" && echo "number"
 $ is not a number "abc" && echo "not a number"
 not a number
-{% endhighlight %}
-
+```
 
 ## Links
 
 * [Source Code (GitHub)](https://github.com/qzb/is.sh);
 * Author: [Józef Sokołowski](https://github.com/qzb);
-

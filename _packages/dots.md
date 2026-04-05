@@ -1,10 +1,10 @@
 ---
-title: "dots"
-description: "Bootstrapping library for OS/X & Ubuntu (and maybe others!)"
-category: default
-tags: [configuration]
+title: dots
+description: Bootstrapping library for OS/X & Ubuntu (and maybe others!)
+categories: utilities
+keywords:
+  - configuration
 ---
-
 
 ![image](https://i.cloudup.com/RCpB-ASfme.png)
 
@@ -12,9 +12,9 @@ The goal of `dots` is to automate the process of getting your operating system f
 
 `dots` should be the first thing you download and run to get your computer set up. Dots differs from dotfiles, beacause dots installs and configures applications as well as builds your profile.
 
-{% highlight bash %}
+```bash
 $ bpkg install dots
-{% endhighlight %}
+```
 
 ### Supported Operating systems:
 
@@ -42,7 +42,7 @@ The Ubuntu build does the following:
 
 ## Usage
 
-{% highlight bash %}
+```bash
 Usage: dots [options] [command] [args ...]
 
 Options:
@@ -55,13 +55,11 @@ Commands:
 reload        Reload the dotfiles
 boot <os>     Bootstrap the given operating system
 update        Update dots
-{% endhighlight %}
+```
 
 ## Links
 
-* [Source Code (GitHub)](https://github.com/bpkg/dots);
-* Author: [Matthew Mueller](https://github.com/MatthewMueller);
-* Packager: [Joseph Werle](https://github.com/jwerle);
+* [Source Code (GitHub)](https://github.com/bpkg/dots)
+* Author: [Matthew Mueller](https://github.com/MatthewMueller)
+* Packager: [Joseph Werle](https://github.com/jwerle)
 * Logo by [Piotrek Chuchla](http://www.thenounproject.com/pchuchla/)
-
-

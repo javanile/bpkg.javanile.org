@@ -1,35 +1,34 @@
 ---
-title: "clip"
-description: "Silly terminal clipboard"
-category: default
-tags: [clipboard]
+title: clip
+description: Silly terminal clipboard
+categories: utilities
+keywords:
+  - clipboard
 ---
-
 
 Really simple clipboard manager in Bash.
 You can access it via command-line or inside shell scripts.
 
-{% highlight bash %}
+```bash
 $ bpkg install -g clip
-{% endhighlight %}
+```
 
 ## Usage
 
 **Store**: *only stores single value:*
-{% highlight bash %}
+
+```bash
 $ echo foo | clip
-{% endhighlight %}
+```
 
 **Read**: *read stored value:*
-{% highlight bash %}
+```bash
 $ clip
-{% endhighlight %}
+```
 
 *NOTE:* It does not interface with the _actual_ system clipboard. It has it's own.
 
 ## Links
 
-* [Source Code (GitHub)](https://github.com/bpkg/clip);
-* Author: [Joseph Werle](https://github.com/jwerle);
-
-
+* [Source Code (GitHub)](https://github.com/bpkg/clip)
+* Author: [Joseph Werle](https://github.com/jwerle)

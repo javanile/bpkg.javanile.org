@@ -1,10 +1,11 @@
 ---
-title: "dbu"
-description: "Bash script that manages Dropbox files"
-category: default
-tags: [sync, dropbox]
+title: dbu
+description: Bash script that manages Dropbox files
+categories: utilities
+keywords:
+  - sync
+  - dropbox
 ---
-
 
 ![logo](http://www.andreafabrizi.it/images/dropbox_logo.png)
 
@@ -19,9 +20,9 @@ It's written in BASH scripting language and only needs **cURL**.
 
 Please refer [to the Wiki](https://github.com/andreafabrizi/Dropbox-Uploader/wiki) for tips and additional information about this project. The Wiki is also the place where you can share your scripts and examples related to Dropbox Uploader.
 
-{% highlight bash %}
+```bash
 $ bpkg install -g dbu
-{% endhighlight %}
+```
 
 ## Usage
 
@@ -83,7 +84,7 @@ dropbox_uploader.sh COMMAND [PARAMETERS]...
 
 ### Examples
 
-{% highlight bash %}
+```bash
 dropbox_uploader.sh upload /etc/passwd /myfiles/passwd.old
 dropbox_uploader.sh upload *.zip /
 dropbox_uploader.sh download /backup.zip
@@ -92,13 +93,13 @@ dropbox_uploader.sh mkdir /myDir/
 dropbox_uploader.sh upload "My File.txt" "My File 2.txt"
 dropbox_uploader.sh share "My File.txt"
 dropbox_uploader.sh list
-{% endhighlight %}
+```
 
 ## DropShell
 
 DropShell is an interactive DropBox shell, based on DropBox Uploader:
 
-{% highlight bash %}
+```bash
 # Launching the DropShell...
 $ dropShell.sh
 DropShell v0.2
@@ -115,12 +116,11 @@ andrea@Dropbox:/$ ls
 [D] 0       Security
 [F] 105843  notes.txt
 andrea@DropBox:/ServerBackup$ get notes.txt
-{% endhighlight %}
+```
 
 ## Links
 
-* [Homepage](http://www.andreafabrizi.it/?dropbox_uploader);
-* [Source Code (GitHub)](https://github.com/bpkg/dbu);
-* Author: [Andrea Fabrizi](http://www.andreafabrizi.it/);
-* Packager: [Joseph Werle](https://github.com/jwerle);
-
+* [Homepage](https://www.andreafabrizi.it/2016/01/01/Dropbox-Uploader/)
+* [Source Code (GitHub)](https://github.com/bpkg/dbu)
+* Author: [Andrea Fabrizi](https://www.andreafabrizi.it/)
+* Packager: [Joseph Werle](https://github.com/jwerle)

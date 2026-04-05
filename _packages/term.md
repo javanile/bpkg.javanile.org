@@ -1,30 +1,34 @@
 ---
-title: "term"
-description: "Terminal fun written in bash inspired by clibs/term"
-category: default
-tags: [animation, color]
+title: term
+description: Terminal fun written in bash inspired by clibs/term
+categories: utilities
+keywords:
+  - animation
+  - color
+author: Joseph Werle
+author_github: jwerle
+repository: https://github.com/bpkg/term
 ---
-
 
 This package allows you to manipulate colors, cursor position and make animations on the terminal.
 
-{% highlight bash %}
+```bash
 $ bpkg install -g term
-{% endhighlight %}
+```
 
 ## Usage
 
 `term` works by accepting commands, just like `git`.
 
-{% highlight bash %}
+```bash
 # It's supposed to output green-ish underlined text
 $ { term color green; } && { term underline; } && { echo heyaaaa; }
 heyaaaa
-{% endhighlight %}
+```
 
 ### term's API
 
-{% highlight bash %}
+```bash
 usage: term [-hV] <command> [args]
 
 commands:
@@ -64,10 +68,9 @@ up                     Upper section
 down                   Lower section
 line                   Current line
 screen                 Entire screen
-{% endhighlight %}
+```
 
 ## Links
 
-* [Source Code (GitHub)](https://github.com/bpkg/term);
-* [Author: Joseph Werle](https://github.com/jwerle);
-
+* [Source Code (GitHub)](https://github.com/bpkg/term)
+* Author: [Joseph Werle](https://github.com/jwerle)

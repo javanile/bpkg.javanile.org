@@ -1,9 +1,12 @@
 ---
-title: "gdub"
-description: "A gradlew / gradle wrapper to make life easier."
-category: default
-tags: [gradle, command wrappers]
+title: gdub
+description: A gradlew / gradle wrapper to make life easier.
+categories: utilities
+keywords:
+  - gradle
+  - command wrappers
 ---
+
 gdub (`gw` on the command line) is a `gradle` / `gradlew` wrapper. Not to be
 confused with the [Gradle][] [Wrapper][], `gw` uses the Gradle Wrapper on
 projects where one is configured, and falls back to use the `gradle` from the
@@ -24,7 +27,7 @@ probably always what you want to do if you are running Gradle from within a
 project tree that uses the Gradle build system.
 
 ## Links
+
 * [Project Page](http://gdub.rocks)
 * [Source Code (GitHub)](https://github.com/dougborg/gdub)
-* [Author: Doug Borg](http://dougborg.org)
-
+* Author: [Doug Borg](http://dougborg.org)

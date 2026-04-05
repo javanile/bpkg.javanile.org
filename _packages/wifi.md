@@ -1,22 +1,23 @@
 ---
-title: "wifi"
-description: "Bash script that connects to wifi"
-category: default
-tags: [internet, wifi]
+title: wifi
+description: Bash script that connects to wifi
+categories: networking
+keywords:
+  - internet
+  - wifi
 ---
-
 
 This package provides convenient commands to manage your wifi networks.
 
-{% highlight bash %}
+```bash
 $ bpkg install -g wifi
-{% endhighlight %}
+```
 
 ## Usage
 
 Some commands require root privileges to access wifi info.
 
-{% highlight bash %}
+```bash
 # List currently available wifi networks.
 sudo wifi.sh scan
 
@@ -38,10 +39,10 @@ sudo INTERFACE=wlan0 wifi.sh connect
 
 # Set wpa_supplicant.conf location
 sudo WPA_CONF=/etc/wpa_supplicant.conf wifi.sh connect
-{% endhighlight %}
+```
 
 ## Links
 
-* [Source Code (GitHub)](https://github.com/bpkg/wifi);
-* Author: [Dominic Tarr](https://github.com/dominictarr);
-* Packager: [Joseph Werle](https://github.com/jwerle);
+* [Source Code (GitHub)](https://github.com/bpkg/wifi)
+* Author: [Dominic Tarr](https://github.com/dominictarr)
+* Packager: [Joseph Werle](https://github.com/jwerle)
