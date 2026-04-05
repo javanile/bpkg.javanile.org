@@ -12,6 +12,7 @@ Thumbs.db
 .rbenv-version
 .rvmrc
 
+.bundles_cache/
 Gemfile
 Gemfile.lock
 _config_dev.yml
