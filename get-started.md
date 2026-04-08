@@ -25,8 +25,6 @@ $ bpkg install term
 $ ./deps/term/term.sh
 ```
 
----
-
 ## Install
 
 You can install **bpkg** from 3 methods:
@@ -36,9 +34,9 @@ You can install **bpkg** from 3 methods:
 Our custom install script will take care of everything for you.
 Just paste the following on your shell:
 
-{% highlight bash %}
+```shell
 $ curl -sLo- http://get.bpkg.sh | bash
-{% endhighlight %}
+```
 
 If you want to see what's inside it, [access it directly](http://get.bpkg.sh) or [check it out on the repository](https://raw.githubusercontent.com/bpkg/bpkg/master/setup.sh).
 
