@@ -3,6 +3,7 @@ layout : page
 title  : Submit your Package
 header : Post Archive
 group  : navigation
+permalink: /submit/
 ---
 
 If you **already have created a package** that follows [bpkg's package guidelines][guide], then it would be great to list it on our site!

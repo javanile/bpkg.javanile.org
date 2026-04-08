@@ -20,6 +20,16 @@ logo: https://github.com/javanile/bpkg.javanile.org/raw/main/assets/images/bpkg.
 logo_text: bpkg
 primary_color: "#2d2d2d"
 highlighter: rouge
+brand_font_url: "https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+brand_font_family: "'Ubuntu Mono', consolas, monaco, monospaced"
+
+navigation:
+  - name: Get Started
+    link: /get-started/
+  - name: Packages
+    link: /packages/
+  - name: Submit your package
+    link: /submit/
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Packages settings
@@ -27,8 +37,14 @@ highlighter: rouge
 suggested_command: "bpkg install {package}"
 
 defaults:
-  - scope: { path: "" }
-    values: { layout: "default" }
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      type: "categories"
+    values:
+      body_class: "page-packages"
 
 collections:
   packages:

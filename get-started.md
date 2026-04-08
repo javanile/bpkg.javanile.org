@@ -1,7 +1,5 @@
 ---
-title:    Home
-tabtitle: bpkg home
-tagline:  Supporting tagline
+title:    Get Started
 permalink: /get-started/
 ---
 
@@ -21,11 +19,11 @@ $ term
 
 Besides installing shell scripts globally you can use them on a _per-project basis_.
 
-{% highlight bash %}
+```shell
 # Installs `term` under the `deps/` directory
 $ bpkg install term
 $ ./deps/term/term.sh
-{% endhighlight %}
+```
 
 ---
 
@@ -48,19 +46,19 @@ If you want to see what's inside it, [access it directly](http://get.bpkg.sh) or
 
 [clibs][clib] is a great package manager for the C language. If you have it, installing **bpkg** is as simple as:
 
-{% highlight bash %}
+```shell
 $ clib install bpkg/bpkg
-{% endhighlight %}
+```
 
 ### 3. Source Code
 
 If you prefer to handle source code, clone **bpkg**'s repository and install it on the following way:
 
-{% highlight bash %}
+```shell
 $ git clone https://github.com/bpkg/bpkg.git
 $ cd bpkg
 $ ./setup.sh install
-{% endhighlight %}
+```
 
 [gem]: https://rubygems.org/
 [npm]: https://www.npmjs.org/
