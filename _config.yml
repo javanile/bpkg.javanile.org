@@ -28,7 +28,7 @@ navigation:
     link: /get-started/
   - name: Packages
     link: /packages/
-  - name: Submit your package
+  - name: Submit Package
     link: /submit/
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
