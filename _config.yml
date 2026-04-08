@@ -54,6 +54,13 @@ collections:
     output: true
     permalink: /:collection/:name
 
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  permalinks:
+    category: /cat/:name/
+
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Build settings
 #
