@@ -1,8 +1,9 @@
 ---
-layout : page
-title  : bpkg Package Guidelines
-header : Post Archive
-group  : navigation
+layout: page
+title: bpkg Package Guidelines
+header: Post Archive
+group: navigation
+permalink: /guidelines/
 ---
 
 ## Build packages that are easy to install and easy to trust

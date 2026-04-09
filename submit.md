@@ -1,8 +1,8 @@
 ---
-layout : page
-title  : Submit your Package
-header : Post Archive
-group  : navigation
+layout: page
+title: Submit your Package
+header: Post Archive
+group: navigation
 permalink: /submit/
 ---
 
