@@ -22,16 +22,16 @@ If you do not already have a GitHub account, create one first.
 
 Clone the repository locally:
 
-{% highlight bash %}
+```shell
 $ git clone http://github.com/bpkg/bpkg.github.io
 $ cd bpkg.github.io
-{% endhighlight %}
+```
 
 Create a dedicated branch for your package entry:
 
-{% highlight bash %}
+```shell
 $ git checkout -b your-package-name
-{% endhighlight %}
+```
 
 ### 3. Add your package entry
 
@@ -39,10 +39,10 @@ Create a new entry:
 
 Replace `PACKAGE_NAME` by your package name.
 
-{% highlight bash %}
+```shell
 $ rake post title="PACKAGE_NAME"
 Creating new post: ./_posts/2014-06-02-package-name.md
-{% endhighlight %}
+```
 
 Open the generated file and replace the placeholder content.
 

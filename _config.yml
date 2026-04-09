@@ -22,6 +22,8 @@ primary_color: "#2d2d2d"
 highlighter: rouge
 brand_font_url: "https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
 brand_font_family: "'Press Start 2P', system-ui"
+brand_font_weight: 400
+brand_font_style: normal
 
 navigation:
   - name: Get Started
