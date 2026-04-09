@@ -1,6 +1,7 @@
 ---
-title:    Get Started
+title: Get Started
 permalink: /get-started/
+layout: page
 ---
 
 ## A package manager for Bash scripts
