@@ -1,15 +1,17 @@
 ---
 title: json.sh
-description: A pipeable JSON parser written in Bash
+description: Streaming JSON parser for Bash pipelines.
 categories: utilities
 keywords:
   - json
   - parser
 ---
 
-yo, so it's a json parser written in bash
+`json.sh` parses JSON in Bash-friendly form so it can be inspected, filtered, and processed in shell pipelines.
 
-Pipe json to it, and it traverses the json objects and prints out the path to the current object (as a JSON array) and then the object, without whitespace.
+It walks the input structure and prints each path as a JSON array followed by the associated value, with minimal whitespace.
+
+## Install
 
 ```bash
 $ bpkg install -g json.sh
@@ -31,8 +33,7 @@ $ json_parse < package.json
 ["dependencies"]  {}
 #  ... etc
 
-# Here's a more complex example:
-#... try it and see
+# A more complex example:
 curl registry.npmjs.org/express | ./JSON.sh | egrep '\["versions","[^"]*"\]'
 ```
 

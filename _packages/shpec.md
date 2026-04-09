@@ -1,6 +1,6 @@
 ---
 title: shpec
-description: Test your shell scripts
+description: Behavior-driven testing framework for shell scripts.
 categories: testing
 keywords:
   - bash

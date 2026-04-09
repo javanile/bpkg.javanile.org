@@ -1,6 +1,6 @@
 ---
 title: tldr bash client
-description: "Display tldr pages: community driven man-by-example"
+description: "Read tldr pages from the command line with a Bash client."
 categories: utilities
 keywords:
   - color

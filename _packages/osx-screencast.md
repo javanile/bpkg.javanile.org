@@ -1,6 +1,6 @@
 ---
 title: osx-screencast
-description: Easily create a screencast on OS X in a few commands
+description: Create screencasts on macOS from the command line.
 categories: utilities
 keywords:
   - video

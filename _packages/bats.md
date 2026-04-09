@@ -8,6 +8,8 @@ keywords:
   - ci
 ---
 
+`Bats` is one of the most established testing frameworks for Bash, with TAP-compatible output and a compact syntax that fits shell-first projects well.
+
 ## Usage
 
 Write tests into `*.bats` files like:

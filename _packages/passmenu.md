@@ -1,6 +1,6 @@
 ---
 title: passmenu
-description: pass + dmenu
+description: dmenu interface for the pass password store.
 categories: utilities
 keywords:
   - pass

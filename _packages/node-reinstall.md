@@ -1,13 +1,13 @@
 ---
 title: node-reinstall
-description: Complete Node Reinstall. This deletes everything, yes everything, and re-installs Node and NPM with NVM, then re-installs global NPM modules.
+description: Reinstall Node.js, npm, and global packages with NVM or Nave.
 categories: nodejs
 keywords:
   - osx
   - nodejs
 ---
 
-This package re-installs Node.js and NPM using NVM or Nave.
+`node-reinstall` removes an existing Node.js setup and rebuilds it using NVM or Nave, including global npm packages.
 
 ## Usage
 

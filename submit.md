@@ -6,36 +6,36 @@ group  : navigation
 permalink: /submit/
 ---
 
-If you **already have created a package** that follows [bpkg's package guidelines][guide], then it would be great to list it on our site!
+If you maintain a package that follows the [bpkg package guidelines][guide], you can submit it to the catalog and make it discoverable to the rest of the shell community.
 
-On a few words, you have to submit a pull request with your package information to [our website's repository][site].
+The process is simple: add a Markdown entry for your package in [the site repository][site] and open a pull request.
 
-Here's a step-by-step guide:
+## Submission flow
 
-## 1. Fork the website repository
+### 1. Fork the website repository
 
 Click: [Fork bpkg on github](https://github.com/bpkg/bpkg.github.io/fork)
 
-If you don't have a github account yet, you will need to create one.
+If you do not already have a GitHub account, create one first.
 
-## 2. Clone the website repository
+### 2. Clone your fork
 
-The following commands will download our website under a directory called `bpkg.github.io` and then navigate to it.
+Clone the repository locally:
 
 {% highlight bash %}
 $ git clone http://github.com/bpkg/bpkg.github.io
 $ cd bpkg.github.io
 {% endhighlight %}
 
-Then, **make sure to create a branch for your package**. The following command does just that:
+Create a dedicated branch for your package entry:
 
 {% highlight bash %}
 $ git checkout -b your-package-name
 {% endhighlight %}
 
-## 3. Add your project to it
+### 3. Add your package entry
 
-The command below will create a file on which you must enter your project's metadata. When you execute it, it will say which file you must edit.
+Create a new entry:
 
 Replace `PACKAGE_NAME` by your package name.
 
@@ -44,9 +44,9 @@ $ rake post title="PACKAGE_NAME"
 Creating new post: ./_posts/2014-06-02-package-name.md
 {% endhighlight %}
 
-Open the file that the previous command told you to.
+Open the generated file and replace the placeholder content.
 
-There, it'll have this format:
+It will look like this:
 
     layout: post
     title: "PACKAGE_NAME"
@@ -55,47 +55,47 @@ There, it'll have this format:
     tags: []
     ---
 
-You must provide at least the following:
+At minimum, provide:
 
-* **title**: Name of your package, in a UNIX-like form.
-  For example `this-name` is acceptable and `This Name` not.
-* **description**: One-line summary of what your package does.
-* **category**: Pick **one** of [all categories](/packages/category) that best suit your package.
-* **tags**: Several tags that give a clue on what your package is about. It must have `[this, format]`.
- [Here's a list of all tags](/packages/tag). You can create your own, although we encourage you to pick already-existing ones.
-* **source code link**: *Append a line* and put a link to the package's source code repository.
-* **author**: *Append another line* and place your name along with at least one contact info (homepage, email, twitter).
+* **title**: the package name, in a Unix-friendly format such as `this-name`;
+* **description**: a one-line summary of what the package does;
+* **category**: one category from [the catalog](/packages/category);
+* **tags**: a short list in `[this, format]` form to help discovery;
+* **source code link**: add a link to the repository;
+* **author**: add your name and at least one contact method.
 
-**Note:** Don't change the other lines as it might break something.
+Keep the remaining structure intact so the site can render the page correctly.
 
-Optionally you can _tell us more about the package_. Make sure to write text in Markdown format and place it **under** the last line.
+Below the front matter, you can add a short Markdown description with install notes, examples, and links.
 
-A _sample package information_ file would be like this:
+Example:
 
     layout: post
     title: "fortune-fun"
-    description: "like 'fortune' but way cooler"
+    description: "Random message generator for the command line"
     category: game
     tags: [fun, random, cute]
     ---
-	This package has a random outcome: it either erases your home directory or echoes a "fortune" (message-of-the-day).
-	## Usage
-	`fortune-fun`
-	...or for the bravest
-	`sudo fortune-fun`
-	## Links
-	* [Source Code (GitHub)][https://github.com/your/repository]
-	* [Author: Satan](http://your.homepage.com)
+    `fortune-fun` prints a random message-of-the-day in the terminal.
 
-## 4. Submit it to us
+    ## Usage
 
-Finally, make a pull request with your changes to our repository.
+    `fortune-fun`
 
-The GitHub web interface has nice green buttons for that.
+    ## Links
 
-## Important Note
+    * [Source Code (GitHub)](https://github.com/your/repository)
+    * [Author](http://your.homepage.com)
 
-If your submit request doesn't follow these guidelines, we will kindly ask you to make sure it does.
+### 4. Open the pull request
+
+Push your branch to GitHub and open a pull request against the site repository.
+
+The GitHub web interface will guide you through the final step.
+
+## Before you submit
+
+Review the entry once before submitting. Clear metadata, a concise description, and a working repository link make approval much faster.
 
 [guide]: /guidelines
 [site]:  https://github.com/bpkg/bpkg.github.io

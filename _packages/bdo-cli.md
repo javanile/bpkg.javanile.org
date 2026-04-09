@@ -1,6 +1,6 @@
 ---
 title: bdo-cli
-description: bdo-cli provides a collection of helpful shell scripts for Git, GitHub, and development workflows.
+description: CLI helpers for Git, GitHub, and everyday development workflows.
 categories: bash
 keywords:
   - github

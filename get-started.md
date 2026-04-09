@@ -3,46 +3,45 @@ title:    Get Started
 permalink: /get-started/
 ---
 
-## bpkg is a _bash package manager_
+## A package manager for Bash scripts
 
-_JavaScript has [npm][npm], Ruby has [Gems][gem], Python has [pip][pip] and now Shell has bpkg!_
+JavaScript has `npm`, Ruby has `gem`, Python has `pip`. `bpkg` brings the same workflow to Bash: discoverable packages, repeatable installs, and a shared distribution model for shell tooling.
 
-With **bpkg** you can easily install and manage Bash packages.
+Use **bpkg** to install command-line tools, reusable shell libraries, and small automation utilities without inventing a custom setup step for every repository.
 
-It takes care of installing/uninstalling, execution permissions and everything so you can simply do the following:
+It handles installation, removal, and executable permissions so a package can be consumed like any other CLI tool:
 
 ```shell
-# Installs `term` on `/usr/local/bin` (https://github.com/bpkg/term)
+# Install `term` into `/usr/local/bin`
 $ bpkg install term -g
 $ term
 ```
 
-Besides installing shell scripts globally you can use them on a _per-project basis_.
+`bpkg` also works well at project scope, where dependencies live alongside the code that uses them:
 
 ```shell
-# Installs `term` under the `deps/` directory
+# Install `term` inside the local `deps/` directory
 $ bpkg install term
 $ ./deps/term/term.sh
 ```
 
 ## Install
 
-You can install **bpkg** from 3 methods:
+There are three common ways to install **bpkg**.
 
 ### 1. Install Script
 
-Our custom install script will take care of everything for you.
-Just paste the following on your shell:
+The bootstrap script installs `bpkg` with minimal setup:
 
 ```shell
 $ curl -sLo- http://get.bpkg.sh | bash
 ```
 
-If you want to see what's inside it, [access it directly](http://get.bpkg.sh) or [check it out on the repository](https://raw.githubusercontent.com/bpkg/bpkg/master/setup.sh).
+If you want to inspect it first, open [get.bpkg.sh](http://get.bpkg.sh) or review [`setup.sh`](https://raw.githubusercontent.com/bpkg/bpkg/master/setup.sh) in the repository.
 
 ### 2. clibs
 
-[clibs][clib] is a great package manager for the C language. If you have it, installing **bpkg** is as simple as:
+If you already use [clibs][clib], you can install **bpkg** from there as well:
 
 ```shell
 $ clib install bpkg/bpkg
@@ -50,13 +49,23 @@ $ clib install bpkg/bpkg
 
 ### 3. Source Code
 
-If you prefer to handle source code, clone **bpkg**'s repository and install it on the following way:
+If you prefer to install from source:
 
 ```shell
 $ git clone https://github.com/bpkg/bpkg.git
 $ cd bpkg
 $ ./setup.sh install
 ```
+
+## Why bpkg exists
+
+Shell ecosystems often end up as disconnected gists, dotfiles, and one-off repositories. `bpkg` aims to make Bash tooling more reusable by giving packages a standard shape and a standard installation flow.
+
+That makes it easier to:
+
+* publish small utilities without building a full language runtime around them;
+* consume shell scripts as dependencies inside projects;
+* discover tools by category instead of by chance.
 
 [gem]: https://rubygems.org/
 [npm]: https://www.npmjs.org/

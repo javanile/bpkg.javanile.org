@@ -5,7 +5,7 @@ categories: utilities
 
 layout: post
 title: "parse-quick-parameters"
-description: "Given a docstring, configures named parameters for a bash function"
+description: "Generate named Bash parameters from a docstring."
 category: bash
 tags: [bash]
 ---

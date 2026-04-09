@@ -1,6 +1,6 @@
 ---
 title: kewt
-description: A minimalist static site generator inspired by werc
+description: Minimalist static site generator inspired by werc.
 categories: utilities
 keywords:
   - markdown

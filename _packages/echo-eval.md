@@ -1,6 +1,6 @@
 ---
 title: echo-eval
-description: Debug systems faster when logs look like terminal output.
+description: Debug shell systems with logs that read like terminal sessions.
 categories: testing
 keywords:
   - bash

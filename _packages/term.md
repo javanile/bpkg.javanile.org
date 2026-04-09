@@ -1,6 +1,6 @@
 ---
 title: term
-description: Terminal fun written in bash inspired by clibs/term
+description: Terminal formatting, cursor control, and animation helpers for Bash.
 categories: utilities
 keywords:
   - animation
@@ -10,7 +10,9 @@ author_github: jwerle
 repository: https://github.com/bpkg/term
 ---
 
-This package allows you to manipulate colors, cursor position and make animations on the terminal.
+`term` provides building blocks for richer terminal output: colors, cursor movement, screen control, and lightweight animations.
+
+## Install
 
 ```bash
 $ bpkg install -g term
@@ -18,15 +20,15 @@ $ bpkg install -g term
 
 ## Usage
 
-`term` works by accepting commands, just like `git`.
+`term` is command-oriented, in the same style as tools like `git`.
 
 ```bash
-# It's supposed to output green-ish underlined text
+# Print green, underlined text
 $ { term color green; } && { term underline; } && { echo heyaaaa; }
 heyaaaa
 ```
 
-### term's API
+### Command reference
 
 ```bash
 usage: term [-hV] <command> [args]

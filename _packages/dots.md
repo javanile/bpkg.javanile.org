@@ -1,6 +1,6 @@
 ---
 title: dots
-description: Bootstrapping library for OS/X & Ubuntu (and maybe others!)
+description: Bootstrap macOS and Ubuntu machines from the shell.
 categories: utilities
 keywords:
   - configuration

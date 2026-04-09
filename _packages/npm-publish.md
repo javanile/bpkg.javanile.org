@@ -1,6 +1,6 @@
 ---
 title: npm-publish
-description: A npm module publisher
+description: Shell-friendly npm publishing helper.
 categories: utilities
 keywords:
   - npm

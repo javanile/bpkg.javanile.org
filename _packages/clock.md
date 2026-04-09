@@ -1,6 +1,6 @@
 ---
 title: clock
-description: Track your working hours on the command line
+description: Track work sessions from the command line.
 categories: bash
 keywords:
   - bash

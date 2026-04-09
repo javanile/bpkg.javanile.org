@@ -1,6 +1,6 @@
 ---
 title: bash-db
-description: Very simple key-value store for bash
+description: Lightweight key-value store for Bash scripts.
 categories: bash
 keywords:
   - utils
@@ -8,25 +8,23 @@ keywords:
   - db
 ---
 
-bash-db
-=======
+`bash-db` is a minimal key-value database for Bash scripts. It relies only on common Unix tools and is designed for lightweight local storage.
 
-Very simple Key-Value database on bash script. Depends on pre-installed software only (tested on Ubuntu 14.04 LTS):
+Dependencies:
 * sed
 * bash
 * grep
 * base64
 * xargs
 
-Install
-=======
+## Install
 
 ## bpkg (global package)
 ```bash
 bpkg install reddec/bash-db
 ```
 
-## Make (/usr/local/bin) 
+## Make (`/usr/local/bin`)
 ```bash
 make install
 ``` 
@@ -39,8 +37,7 @@ chmod +x db.sh
 cp db.sh /usr/local/bin/db
 ```
 
-Usage
-=======
+## Usage
 
 ## Command-line Tool
 `db <method> <database> [arguments...]`

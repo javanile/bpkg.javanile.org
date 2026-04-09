@@ -1,6 +1,6 @@
 ---
 title: bash-templater
-description: Simplify Configuration File and Script Generation
+description: Generate configuration files and scripts from reusable templates.
 categories: bash
 keywords:
   - bash

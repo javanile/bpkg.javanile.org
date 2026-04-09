@@ -1,7 +1,7 @@
-# bpkg.github.io
+# bpkg website
 
-`bpkg` is a lightweight bash package manager.
-This repository contains the source code of it's homepage.
+`bpkg` is a package manager for Bash scripts and shell tooling.
+This repository contains the source for its website and package catalog.
 
 ## Links:
 
@@ -9,64 +9,49 @@ This repository contains the source code of it's homepage.
 * [`bpkg` source code on GitHub][hub];
 * [`bpkg` organization on GitHub][org];
 
-## Dependencies
+## Site stack
 
-This website was made with the [Jekyll][jekyll] engine, so it depends on a few
-Ruby Gems. To install them, run the following command.
+The site is built with [Jekyll][jekyll]. Install the required gem first:
 
     $ gem install jekyll
 
-It might take a while to finish, but once it does you're ready to go.
-
 ## How to edit
 
-To **make changes** to the page or **run it locally**, clone this GitHub
-repository and make sure you have _installed the dependencies_ above.
-
-Then, it's a matter of editing pages and running `rake` tasks.  Here's a rundown
-of possible commands (thanks to [this great quickstart on Jekyll][tuto]):
+Clone the repository, install the dependency above, then edit pages and preview the site locally. Common commands:
 
 ---
 
     $ rake preview
 
-Builds the entire site to a local folder `_site` and launches a webserver to
-preview it.
+Builds the site into `_site` and launches a local preview server.
 
-To see the full site, point your browser to `localhost:40000`.
+Open `localhost:40000` in your browser.
 
-If you make any changes on any files, it will regenerate the website
-automatically.
+Changes are rebuilt automatically while the preview server is running.
 
 ---
 
     $ rake post title="Hello, World!"
 
-Creates a new post. It will create a file `_posts/YYYY-MM-DD-title.md`, where
-the date is the current, by default.
+Creates a new post at `_posts/YYYY-MM-DD-title.md`.
 
-No further changes are required, the post will get automatically inserted on the
-site.
+The generated post is automatically included in the site.
 
 ---
 
     $ rake page name="about"
 
-Creates a new page. It will create the file `./about/index.html`.
+Creates a new page at `./about/index.html`.
 
     $ rake page name="about.html"
 
-Alternative way to create a new page, on this case it will be `./about.html`.
+Alternative form that creates `./about.html`.
 
 ## Notes
 
-* When producing content (writing pages/posts) keep in mind
-  [this useful guide][posts]. It tells how to include images, display
-  post excerpts and highlight code snippets.
-* If you plan on further customizing the blog, it's highly recommended to
-  read [this 10-minute introduction to Jekyll][intro].
-* If you change settings on the file `_config.yml`, automatic regeneration won't
-  work - you'll have to run the command `rake preview` again.
+* When writing content, use the [Jekyll post guide][posts] for images, excerpts, and code highlighting.
+* For broader Jekyll customization, the [introduction guide][intro] is still a useful reference.
+* If you change `_config.yml`, restart `rake preview` because Jekyll will not hot-reload config changes.
 
 ## Credits
 
@@ -83,4 +68,3 @@ This site uses [Jekyll Bootstrap][boots] with a heavily customized version of
 [theme]:   https://github.com/jekyllbootstrap/theme-the-program
 [saito]:   http://css.studiomohawk.com/
 [posts]:   http://jekyllrb.com/docs/posts/
-

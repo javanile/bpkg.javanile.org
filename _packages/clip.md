@@ -1,13 +1,14 @@
 ---
 title: clip
-description: Silly terminal clipboard
+description: Terminal clipboard for short-lived values and shell pipelines.
 categories: utilities
 keywords:
   - clipboard
 ---
 
-Really simple clipboard manager in Bash.
-You can access it via command-line or inside shell scripts.
+`clip` is a tiny clipboard-like buffer for the terminal. It is useful when you want to pass values between commands or shell scripts without relying on a desktop clipboard.
+
+## Install
 
 ```bash
 $ bpkg install -g clip
@@ -26,7 +27,7 @@ $ echo foo | clip
 $ clip
 ```
 
-*NOTE:* It does not interface with the _actual_ system clipboard. It has it's own.
+*Note:* it does not integrate with the system clipboard. It maintains its own value store.
 
 ## Links
 

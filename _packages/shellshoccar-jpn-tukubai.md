@@ -1,6 +1,6 @@
 ---
 title: shellshoccar-jpn-tukubai
-description: Business system tools
+description: Japanese shell toolkit for data processing and business workflows.
 categories: utilities
 keywords:
   - parser

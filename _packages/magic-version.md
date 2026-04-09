@@ -1,6 +1,6 @@
 ---
 title: magic-version
-description: calculate version from CI env
+description: Compute application versions from CI environment metadata.
 categories: testing
 keywords:
   - coding

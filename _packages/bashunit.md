@@ -1,6 +1,6 @@
 ---
 title: bashunit
-description: A simple testing library for bash scripts.
+description: Testing library for Bash scripts.
 categories: testing
 keywords:
   - bash

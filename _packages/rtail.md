@@ -1,6 +1,6 @@
 ---
 title: rtail
-description: Easily tail a file over SSH
+description: Tail remote files over SSH.
 categories: networking
 keywords:
   - internet

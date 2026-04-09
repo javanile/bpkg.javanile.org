@@ -1,4 +1,4 @@
 ---
 title: Networking
-description: Tools for SSH, TCP, HTTP and network connectivity.
+description: Shell tools for SSH, TCP, HTTP, sync, and network connectivity workflows.
 ---

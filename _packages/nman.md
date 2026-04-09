@@ -1,6 +1,6 @@
 ---
 title: nman
-description: Read the node.js core api in man page format
+description: Read the Node.js core API in man-page format.
 categories: utilities
 keywords:
   - docs

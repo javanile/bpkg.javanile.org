@@ -1,6 +1,6 @@
 ---
 title: dbu
-description: Bash script that manages Dropbox files
+description: Command-line client for uploading and managing files on Dropbox.
 categories: utilities
 keywords:
   - sync
@@ -9,14 +9,14 @@ keywords:
 
 ![logo](http://www.andreafabrizi.it/images/dropbox_logo.png)
 
-`dbu` (Dropbox Uploader) is a BASH script which can be used to upload, download, list or delete files from Dropbox, an online file sharing, synchronization and backup service.
+`dbu` (Dropbox Uploader) is a Bash client for uploading, downloading, listing, and deleting files in Dropbox.
 
-It's written in BASH scripting language and only needs **cURL**.
+It is written in Bash and only depends on **cURL**.
 
 **Why use this script?**
 
-* **Portable:** It's written in BASH scripting and only needs *cURL* (curl is a tool to transfer data from or to a server, available for all operating systems and installed by default in many linux distributions).
-* **Secure:** It's not required to provide your username/password to this script, because it uses the official Dropbox API for the authentication process.
+* **Portable:** it only requires Bash and `curl`, both commonly available on Unix-like systems.
+* **Secure:** it uses the official Dropbox API, so you do not need to store your Dropbox password in the script.
 
 Please refer [to the Wiki](https://github.com/andreafabrizi/Dropbox-Uploader/wiki) for tips and additional information about this project. The Wiki is also the place where you can share your scripts and examples related to Dropbox Uploader.
 
@@ -30,7 +30,7 @@ The `dbu` package comes with two executables - `dropbox_uploader.sh` and `dropSh
 
 ### Dropbox Uploader
 
-This script receives commands, pretty much like `git`. The syntax is quite simple:
+This executable is command-oriented, similar to `git`:
 
 ```
 dropbox_uploader.sh COMMAND [PARAMETERS]...
@@ -103,7 +103,7 @@ DropShell is an interactive DropBox shell, based on DropBox Uploader:
 # Launching the DropShell...
 $ dropShell.sh
 DropShell v0.2
-The Intractive Dropbox SHELL
+The Interactive Dropbox SHELL
 Andrea Fabrizi - andrea.fabrizi@gmail.com
 
 Type help for the list of the available commands.

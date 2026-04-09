@@ -1,6 +1,6 @@
 ---
 title: bash-util-lib
-description: Bash Utility Library
+description: Reusable utility functions for Bash scripts.
 categories: bash
 keywords:
   - cli

@@ -1,6 +1,6 @@
 ---
 title: github
-description: Github API from the command line
+description: GitHub API client for shell scripts and the command line.
 categories: utilities
 keywords:
   - library

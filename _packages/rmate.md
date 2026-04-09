@@ -1,6 +1,6 @@
 ---
 title: rmate
-description: Remote TextMate 2 implemented as shell script
+description: Remote TextMate 2 client implemented as a shell script.
 categories: utilities
 keywords:
   - osx

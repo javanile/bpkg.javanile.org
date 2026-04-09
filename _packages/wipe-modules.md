@@ -1,6 +1,6 @@
 ---
 title: wipe-modules
-description: A little agent that removes the node_modules folder of non-active projects
+description: Remove stale node_modules directories across inactive projects.
 categories: bash
 keywords:
   - nodejs

@@ -1,6 +1,6 @@
 ---
 title: is.sh
-description: Fancy alternative for old good test command
+description: Readable condition helpers for Bash scripts.
 categories: bash
 keywords:
   - utility
@@ -8,7 +8,7 @@ keywords:
   - bash
 ---
 
-**is.sh** allows you to write conditions which can be read by average human being.
+**is.sh** lets you write conditional checks in a more readable style than the classic `test` command.
 
 ## Usage
 
@@ -45,7 +45,7 @@ fi
 * ``is older <pathA> <pathB>`` - checks if first file is older than second one
 * ``is newer <pathA> <pathB>`` - checks if first file is newer than second one
 * ``is true <value>`` - true if value is equal "true" or "0"
-* ``is false <value>`` - oposite of ``is true <value>``
+* ``is false <value>`` - opposite of ``is true <value>``
 
 ### Negations
 
@@ -59,5 +59,5 @@ not a number
 
 ## Links
 
-* [Source Code (GitHub)](https://github.com/qzb/is.sh);
-* Author: [Józef Sokołowski](https://github.com/qzb);
+* [Source Code (GitHub)](https://github.com/qzb/is.sh)
+* Author: [Józef Sokołowski](https://github.com/qzb)

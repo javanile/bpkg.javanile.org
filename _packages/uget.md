@@ -1,6 +1,6 @@
 ---
 title: uget
-description: Checks the current utility to download and use it
+description: Detect and use the best available download utility.
 categories: utilities
 keywords:
   - utility

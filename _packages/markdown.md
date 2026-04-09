@@ -1,6 +1,6 @@
 ---
 title: markdown
-description: Markdown interpreter using only traditional Unix tools
+description: Render Markdown using traditional Unix tools.
 categories: utilities
 keywords:
   - markdown

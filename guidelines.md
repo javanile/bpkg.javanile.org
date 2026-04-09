@@ -5,15 +5,15 @@ header : Post Archive
 group  : navigation
 ---
 
-## Package details
+## Build packages that are easy to install and easy to trust
 
-Here we lay down some info on the structure of a package.
+`bpkg` works best when packages are small, explicit, and unsurprising. These guidelines describe the minimum metadata expected by the registry and the conventions that make a Bash package pleasant to adopt.
 
 ## package.json
 
-Every package must have a file called `package.json`; it specifies package metadata on the [JSON format][json].
+Every package must include a `package.json` file with package metadata in [JSON][json] format.
 
-Here's an example of a well-formed `package.json`:
+Example:
 
 ```json
 {
@@ -25,12 +25,11 @@ Here's an example of a well-formed `package.json`:
 }
 ```
 
-All fields are mandatory except when noted.
-Here's a detailed explanation on all fields:
+All fields are required unless noted otherwise.
 
 ### name
 
-The `name` attribute is required as it is used to tell `bpkg` where to put it in the `deps/` directory in you project.
+Required. `bpkg` uses `name` to determine where the package will live under `deps/`.
 
 ```json
   "name": "my-script"
@@ -38,7 +37,7 @@ The `name` attribute is required as it is used to tell `bpkg` where to put it in
 
 ### version (optional)
 
-The `version` attribute is not required but can be useful. It should correspond to the version that is associated with the installed package.
+Optional, but recommended. It should match the version associated with the published package.
 
 ```json
   "version": "0.0.1"
@@ -46,15 +45,15 @@ The `version` attribute is not required but can be useful. It should correspond 
 
 ### description
 
-A human readable description of what the package offers for functionality.
+A short, human-readable summary of what the package does.
 
 ```json
-  "description": "This script makes monkeys jump out of your keyboard"
+  "description": "Terminal helpers for colors, cursor movement, and animations"
 ```
 
 ### global
 
-Indicates that the package is only intended to be install as a script. This allows the omission of the `-g` or `--global` flag during installation.
+Indicates that the package is intended to be installed as an executable command. When `global` is `true`, users do not need to pass `-g` or `--global` explicitly.
 
 ```json
   "global": "true"
@@ -62,7 +61,7 @@ Indicates that the package is only intended to be install as a script. This allo
 
 ### install
 
-Shell script used to invoke in the install script. This is required if the `global` attribute is set to `true` or if the `-g` or `--global` flags are provided.
+The shell command to run during installation. This is required if `global` is `true` or if the package is being installed with `-g` / `--global`.
 
 ```json
   "install": "make install"
@@ -70,7 +69,7 @@ Shell script used to invoke in the install script. This is required if the `glob
 
 ### scripts
 
-This is an array of scripts that will be installed into a project.
+An array of scripts to install into a project dependency directory.
 
 ```json
   "scripts": ["script.sh"]
@@ -78,7 +77,7 @@ This is an array of scripts that will be installed into a project.
 
 ### files
 
-This is an array of files that will be installed into a project.
+An array of additional files that should be installed with the package.
 
 ```json
   "files": ["bar.txt", "foo.txt"]
@@ -86,7 +85,7 @@ This is an array of files that will be installed into a project.
 
 ### dependencies (optional)
 
-This is a hash of dependencies. The keys are the package names, and the values are the version specifiers. If you want the latest code use `'master'` in the version specifier. Otherwise, use a tagged release identifier. This works the same as `bpkg install`'s package/version specifiers.
+Optional. A map of package dependencies where keys are package names and values are version specifiers. Use `"master"` to track the latest code, or a tagged release for a stable dependency. This follows the same version syntax accepted by `bpkg install`.
 
 ```json
   "dependencies": {
@@ -97,11 +96,11 @@ This is a hash of dependencies. The keys are the package names, and the values a
 
 ## Packaging best practices
 
-These are guidelines that we strongly encourage developers to follow.
+Beyond metadata, package quality matters. Good `bpkg` packages are composable, documented, and usable both interactively and in automation.
 
 ### Package exports
 
-It's nice to have a bash package that can be used in the terminal and also be invoked as a command line function. To achieve this the exporting of your functionality *should* follow this pattern:
+Whenever possible, design your package so it can be used both as a command and as a sourced shell function. A common pattern is:
 
 ```sh
 if [[ ${BASH_SOURCE[0]} != $0 ]]; then
@@ -112,7 +111,7 @@ else
 fi
 ```
 
-This allows a user to `source` your script or invoke as a script.
+This lets users either execute the script directly or `source` it and reuse the same functionality inside other scripts.
 
 ```sh
 # Running as a script
@@ -121,5 +120,13 @@ $ ./my_script.sh some args --blah
 $ source my_script.sh
 $ my_script some more args --blah
 ```
+
+### Additional recommendations
+
+* Keep installation side effects minimal and explicit.
+* Prefer clear defaults over interactive setup when possible.
+* Document required environment variables and external dependencies.
+* Include at least one usage example in the repository README.
+* Treat portability as a feature: the smaller the dependency surface, the more useful the package becomes.
 
 [json]: http://json.org/example

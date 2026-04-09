@@ -1,6 +1,6 @@
 ---
 title: lcov.sh
-description: Coverage framework for Shell projects
+description: Coverage tooling for shell projects.
 categories: bash
 keywords:
   - cli

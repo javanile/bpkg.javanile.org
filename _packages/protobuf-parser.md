@@ -1,6 +1,6 @@
 ---
 title: protobuf-parser-bash
-description: A Protobuf parser, encoder and decoder in Bash.
+description: Parse, encode, and decode Protobuf in Bash.
 categories: bash
 keywords:
   - library

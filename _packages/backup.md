@@ -1,11 +1,13 @@
 ---
 title: bash-backup
-description: Simple backup shell script by bash v4.*
+description: Backup automation for Bash projects and Linux servers.
 categories: utilities
 keywords:
   - backup
   - s3
 ---
+
+`bash-backup` automates filesystem and MySQL backups, then ships the resulting archives to S3-compatible storage.
 
 ## Usage
 
@@ -15,7 +17,7 @@ $ cd bash-backup
 $ cp env-example .env
 ```
 
-Edit `.env` file
+Edit the `.env` file with your backup settings.
 
 ```bash
 $ bash backup.sh [--debug]
@@ -29,13 +31,13 @@ $ cd bash-backup
 $ cp env-example .env-sample1
 ```
 
-Edit `.env-sample1` file
+Edit `.env-sample1` with the first target configuration.
 
 ```bash
 $ cp env-example .env-sample2
 ```
 
-Edit `.env-sample2` file
+Edit `.env-sample2` with the second target configuration.
 
 ```bash
 $ sh backup.sh [--debug] sample1
@@ -44,10 +46,10 @@ $ sh backup.sh [--debug] sample2
 
 ## Flow
 
-1. Archive the datas. (tar.gz or tar.bz2 or zip)
-2. mysqldump - only mysql yet....
-3. Rearchive the 1 and 2 (tar.gz or tar.bz2 or zip)
-4. Upload to S3. (Generation management) - only s3 yet.......
+1. Archive the selected files and directories.
+2. Dump the MySQL database, if enabled.
+3. Bundle the generated artifacts into a final backup archive.
+4. Upload the result to S3 storage with retention management.
 
 ## Environments
 
@@ -57,19 +59,19 @@ $ sh backup.sh [--debug] sample2
 temporary_directory=tmp
 ```
 
-### log name
+### Log name
 
 ```bash
 log_name=logs/backup.$now.log
 ```
 
-### backup filename
+### Backup filename
 
 ```bash
 backup_filename=backup
 ```
 
-### display messages
+### Display messages
 
 ```bash
 display_messages=1
@@ -127,7 +129,7 @@ storage_type=s3
 
 * _`s3` only_
 
-### s3 info
+### S3 settings
 
 ```bash
 declare -A s3_conf=(
@@ -143,4 +145,4 @@ declare -A s3_conf=(
 ## Links
 
 * [Source Code (GitHub)](https://github.com/newsdict/bash-backup)
-* Author: [yubele](httphttps://github.com/yubele)
+* Author: [yubele](https://github.com/yubele)

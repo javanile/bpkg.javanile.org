@@ -1,6 +1,6 @@
 ---
 title: hr
-description: A horizontal ruler for your terminal
+description: Print horizontal rulers in the terminal.
 categories: bash
 keywords:
   - utils

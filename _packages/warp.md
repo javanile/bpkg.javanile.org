@@ -1,6 +1,6 @@
 ---
 title: warp
-description: File manipulation across terminals sessions made easy
+description: Move files across terminal sessions with minimal friction.
 categories: bash
 keywords:
   - utility

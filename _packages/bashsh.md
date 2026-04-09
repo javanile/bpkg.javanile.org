@@ -1,6 +1,6 @@
 ---
 title: bashsh
-description: Improves your Bash scripts
+description: Productivity helpers for more maintainable Bash scripts.
 categories: bash
 keywords:
   - bash

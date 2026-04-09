@@ -1,13 +1,15 @@
 ---
 title: wifi
-description: Bash script that connects to wifi
+description: Command-line helper for scanning and connecting to Wi-Fi networks.
 categories: networking
 keywords:
   - internet
   - wifi
 ---
 
-This package provides convenient commands to manage your wifi networks.
+`wifi` provides a small command-line interface for discovering networks, choosing an interface, and connecting from Bash.
+
+## Install
 
 ```bash
 $ bpkg install -g wifi
@@ -15,7 +17,7 @@ $ bpkg install -g wifi
 
 ## Usage
 
-Some commands require root privileges to access wifi info.
+Some commands require elevated privileges to access network interfaces and update configuration files.
 
 ```bash
 # List currently available wifi networks.
@@ -30,9 +32,8 @@ sudo wifi.sh add <SSID> <passphrase>
 # Show current interface
 wifi.sh interface
 
-# this defaults to the LAST interface
-# it finds, for me, this is the most recent USB wifi
-# dongle I plugged in.
+# By default the script uses the last detected interface.
+# You can override that choice explicitly:
 
 # Set interface manually like this:
 sudo INTERFACE=wlan0 wifi.sh connect

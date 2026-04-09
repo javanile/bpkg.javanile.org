@@ -1,4 +1,4 @@
 ---
 title: Bash
-description: Bash scripting libraries, frameworks and language tools.
+description: Libraries, frameworks, and authoring tools for serious Bash development.
 ---

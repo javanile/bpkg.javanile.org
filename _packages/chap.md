@@ -1,6 +1,6 @@
 ---
 title: chap
-description: Utility methods for writing scripts for humans
+description: Utility methods for writing human-friendly shell scripts.
 categories: bash
 keywords:
   - color

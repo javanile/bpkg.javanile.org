@@ -1,6 +1,6 @@
 ---
 title: osxbootstrap
-description: Bootstrap a new OSX workstation
+description: Bootstrap a new macOS workstation from the shell.
 categories: utilities
 keywords:
   - configuration

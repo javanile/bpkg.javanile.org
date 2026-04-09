@@ -1,4 +1,4 @@
 ---
 title: Node.js
-description: Tools and utilities for Node.js development from the shell.
+description: Command-line helpers for Node.js installation, publishing, and day-to-day development.
 ---

@@ -1,6 +1,6 @@
 ---
 title: umq
-description: TCP message pushing and receiving in Bash
+description: Push and receive TCP messages from Bash.
 categories: networking
 keywords:
   - internet

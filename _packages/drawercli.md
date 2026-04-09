@@ -1,6 +1,6 @@
 ---
 title: drawercli
-description: Like the app drawer but this is in the terminal.
+description: Terminal app launcher for Termux and Android workflows.
 categories: bash
 keywords:
   - bash
@@ -11,14 +11,16 @@ keywords:
   - android
 ---
 
-This cli app supports using termuxlauncher as your primary launcher for Android phones, interactively and easily install. That's simply the Termuxlauncher Add-on built with fzf🚀
+`drawercli` brings an app-drawer workflow to the terminal, with a focus on Termux and Android launch flows.
+
+It is built around `fzf` and can be used as a lightweight launcher for Termux-based setups.
 
 
 ## Usage
 
 
 `drawercli`
-...or for the help
+For help:
 `drawercli --help`
 
 

@@ -1,6 +1,6 @@
 ---
 title: records.sh
-description: A small logging library for bash. Supports `cli`, `json`, `logfmt`, and custom formats. Integrates with journald and Github actions.
+description: Structured logging library for Bash with multiple output formats.
 categories: bash
 keywords:
   - library

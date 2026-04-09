@@ -1,4 +1,4 @@
 ---
 title: Testing
-description: Testing frameworks, coverage tools and CI helpers for shell scripts.
+description: Testing frameworks, coverage tooling, and CI helpers for shell-based projects.
 ---

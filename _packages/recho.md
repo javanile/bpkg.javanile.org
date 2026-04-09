@@ -1,6 +1,6 @@
 ---
 title: recho
-description: Easily echo strings over SSH
+description: Echo commands and strings over SSH.
 categories: networking
 keywords:
   - internet

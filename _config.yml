@@ -28,6 +28,8 @@ navigation:
     link: /get-started/
   - name: Packages
     link: /packages/
+  - name: Guidelines
+    link: /guidelines/
   - name: Submit Package
     link: /submit/
 
