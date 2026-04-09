@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  jekyll-build:
+    name: Jekyll Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare development files
+        run: |
+          cat > Gemfile <<'EOF'
+          source "https://rubygems.org"
+          gem "github-pages", "~> 219", group: :jekyll_plugins
+          gem "kramdown-parser-gfm"
+          gem "jekyll-include-cache"
+          gem "jekyll-sitemap"
+          EOF
+
+          cat > _config_dev.yml <<'EOF'
+          baseurl: ""
+          repository: "javanile/bpkg.javanile.org"
+          EOF
+
+      - name: Build site in Docker
+        run: |
+          mkdir -p .bundles_cache
+
+          docker run --rm \
+            -v "$PWD:/srv/jekyll" \
+            -v "$PWD/.bundles_cache:/tmp/.bundles_cache" \
+            -e BUNDLE_PATH=/tmp/.bundles_cache \
+            jekyll/builder:3.8 \
+            bash -lc 'chmod 777 "$BUNDLE_PATH" && gem install bundler -v 2.4.22 && bundle install && bundle exec jekyll build --trace --config _config.yml,_config_dev.yml'
+
+      - name: Upload generated site
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: _site

@@ -1,0 +1,68 @@
+name: Catalog
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    paths:
+      - "_packages/**"
+      - "_categories/**"
+      - "*.md"
+
+jobs:
+  validate-markdown-catalog:
+    name: Validate Catalog Metadata
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate package front matter
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          failed=0
+
+          for file in _packages/*.md; do
+            if ! grep -q '^---$' "$file"; then
+              echo "Missing front matter in $file"
+              failed=1
+              continue
+            fi
+
+            for field in title description categories; do
+              if ! grep -q "^${field}:" "$file"; then
+                echo "Missing '$field' in $file"
+                failed=1
+              fi
+            done
+          done
+
+          for file in _categories/*.md; do
+            for field in title description; do
+              if ! grep -q "^${field}:" "$file"; then
+                echo "Missing '$field' in $file"
+                failed=1
+              fi
+            done
+          done
+
+          if [ "$failed" -ne 0 ]; then
+            exit 1
+          fi
+
+      - name: Detect placeholder package entries
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          bad_files="$(find _packages -name '*.md' -type f -size -200c)"
+
+          if [ -n "$bad_files" ]; then
+            echo "Very small package entries detected:"
+            echo "$bad_files"
+            exit 1
+          fi

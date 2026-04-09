@@ -51,10 +51,10 @@ defaults:
 collections:
   packages:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:name/
   categories:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:name/
 
 jekyll-archives:
   enabled:
